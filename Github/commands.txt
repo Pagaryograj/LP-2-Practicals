@@ -1,0 +1,103 @@
+1. PS C:\Users\Shree\Desktop\gitPrac> git --version
+git version 2.43.0.windows.1
+
+2. PS C:\Users\Shree\Desktop\gitPrac> git init
+Initialized empty Git repository in C:/Users/Shree/Desktop/gitPrac/.git/
+
+3. PS C:\Users\Shree\Desktop\gitPrac> git remote add origin https://github.com/Atharvalearner/Demo.git
+4. PS C:\Users\Shree\Desktop\gitPrac> git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)       
+        demo1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+5. PS C:\Users\Shree\Desktop\gitPrac> git add .
+6. PS C:\Users\Shree\Desktop\gitPrac> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo1.txt
+
+7. PS C:\Users\Shree\Desktop\gitPrac> git commit -m "first commit"
+[master (root-commit) 047bf28] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo1.txt
+
+8. PS C:\Users\Shree\Desktop\gitPrac> git status
+On branch master
+nothing to commit, working tree clean
+
+
+9. PS C:\Users\Shree\Desktop\gitPrac> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)       
+        demo2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+10. PS C:\Users\Shree\Desktop\gitPrac> git add .
+PS C:\Users\Shree\Desktop\gitPrac> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   demo2.txt
+
+11. PS C:\Users\Shree\Desktop\gitPrac> git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 235 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Atharvalearner/Demo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+12. PS C:\Users\Shree\Desktop\gitPrac> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   demo2.txt
+
+
+13. PS C:\Users\Shree\Desktop\gitPrac> git commit -m "second commit"
+[master 90e74c6] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo2.txt
+
+14. PS C:\Users\Shree\Desktop\gitPrac> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+
+15. PS C:\Users\Shree\Desktop\gitPrac> git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Atharvalearner/Demo.git
+   047bf28..90e74c6  master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+16. PS C:\Users\Shree\Desktop\gitPrac> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\Shree\Desktop\gitPrac> 
