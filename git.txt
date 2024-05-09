@@ -1,0 +1,8 @@
+cd wad
+ git --version
+git init
+git add .
+git status
+git remote add origin "https://github.com/Pagaryograj/assignment2.git"
+git commit -m "First commit"
+git status

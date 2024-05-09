@@ -1,0 +1,4 @@
+ npm --version     
+ npm install @angular/cli@latest 
+ ng new project_name     
+ ng serve      
